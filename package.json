@@ -1,0 +1,26 @@
+{
+  "name": "meadowlark.js",
+  "version": "1.0.0",
+  "description": "Simple ExpressJS starting point",
+  "main": "meadowlark.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkane106/expressjs-basic.git"
+  },
+  "keywords": [
+    "expressjs",
+    "tutorial"
+  ],
+  "author": "kkane106",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kkane106/expressjs-basic/issues"
+  },
+  "homepage": "https://github.com/kkane106/expressjs-basic#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
