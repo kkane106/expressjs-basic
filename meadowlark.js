@@ -2,14 +2,6 @@ var express = require('express');
 
 var app = express();
 
-// "virtual fortune cookie"
-var fortunes = [ "Conquer fears",
-                 "Rivers need springs",
-                 "Do not fear the unknown",
-                 "Pleasant surprises await",
-                 "Keep it simple stupid"
-               ];
-
 // Configure express-handlebars as template editor
 var handlebars = require('express-handlebars').create({ defaultLayout:'main' });
 app.engine('handlebars', handlebars.engine);
