@@ -6,7 +6,18 @@ var fortune = require('./lib/fortune.js');
 var app = express();
 
 // Configure express-handlebars as template editor
-var handlebars = require('express-handlebars').create({ defaultLayout:'main' });
+var handlebars = require('express-handlebars').create({ 
+  defaultLayout:'main', 
+  // Add helper dependency (section)
+  helpers: {
+    section: function(name, options) {
+      if(!this._sections) this._sections = {};
+      this._sections[name] = options.fn(this);
+      return null;
+    }
+  }
+});
+
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
