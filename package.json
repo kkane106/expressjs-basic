@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/kkane106/expressjs-basic#readme",
   "dependencies": {
+    "chai": "^3.3.0",
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1"
   },
