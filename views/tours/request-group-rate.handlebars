@@ -1,0 +1,15 @@
+<h1>Request Group Rate</h1>
+  <form>
+    <input type="hidden" name="referrer">
+    <input type="text" id="fieldName" name="name" placeholder="name"><br>
+    <input type="text" name="groupSize" placeholder="group size"><br>
+    <input type="email" name="email" placeholder="email"><br>
+    <input type="submit" value="Submit">
+  </form>
+{{#section'jquery'}}
+  <script>
+    $(document.ready(function() {
+      $('input[name="referrer"]').val(document.referrer);
+    });
+  </script>
+{{/section}}
